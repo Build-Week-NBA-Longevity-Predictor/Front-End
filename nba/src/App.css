@@ -16,6 +16,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  color: white;
 }
 
 .App-link {
@@ -28,4 +29,23 @@ p {
 
 .ui.form .field label {
   color:white;
+}
+
+.header {
+  font-size: 3rem;
+}
+
+.button-box {
+  display: flex;
+  margin-top: 10%;
+}
+
+.ui.button.button-styling {
+  margin: 0 40px;
+  background-color: white;
+  width: 168px;
+}
+
+form {
+  margin-top: 5%
 }

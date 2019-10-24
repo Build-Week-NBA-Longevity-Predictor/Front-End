@@ -27,7 +27,7 @@ const Login = (props) => {
         <label>Password</label>
         <input type="password" ref={register} name='password' placeholder='Password' />
       </Form.Field>
-      <Button>Login</Button>
+      <Button className='button-styling'>Login</Button>
     </Form>
   )
 }
