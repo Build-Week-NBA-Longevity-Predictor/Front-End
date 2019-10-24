@@ -22,13 +22,13 @@ const AccountCreation = (props) => {
     <Form onSubmit={handleSubmit(onSubmit)}>
       <Form.Field>
         <label>Email</label>
-        <input type="text" ref={register} name='email' />
+        <input type="text" ref={register} name='email' placeholder='Email' />
       </Form.Field>
       <Form.Field>
         <label>Password</label>
-        <input type="password" ref={register} name='password' />
+        <input type="password" ref={register} name='password' placeholder='Password'/>
       </Form.Field>
-      <Button type='submit'>Create Account</Button>
+      <Button className='button-styling'>Create Account</Button>
     </Form>
   )
 }

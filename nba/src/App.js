@@ -1,27 +1,22 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route} from "react-router-dom";
 import './App.css';
 import AccountCreation from './components/AccountCreation';
 import PrivateRoute from './components/PrivateRoute';
 import Login from './components/Login';
+import Homepage from './components/Homepage'
 
 function App() {
   return (
     <Router>
       <div className="App">
         <header className="App-header">
-          <h2>
-            Welcome to NBA Career Longevity Projector
-          </h2>
-          <Link to='/login'>
-            <p>Log In Now!</p>
-          </Link>
+        <h2 className='header'>
+          Welcome to NBA Career Longevity Projector
+        </h2>
+          <Route exact path='/' component={Homepage} />
+          <Route exact path='/account' component = {AccountCreation} />
           <Route exact path="/login" component={Login} />
-          <Link to='/account'>
-            <p>Sign Up Now!</p>
-          </Link>
-          <PrivateRoute path='/account' component = {AccountCreation} />
-
         </header>
       </div>
     </Router>
@@ -29,5 +24,3 @@ function App() {
 }
 
 export default App;
-
-
