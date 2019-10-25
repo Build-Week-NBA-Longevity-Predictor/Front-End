@@ -69,6 +69,3 @@ function PlayerSearch() {
 }
 
 export default PlayerSearch;
-{
-  /* <p key={index}>{play}</p>; */
-}
