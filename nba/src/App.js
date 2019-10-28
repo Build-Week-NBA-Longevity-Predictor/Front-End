@@ -5,6 +5,7 @@ import AccountCreation from "./components/AccountCreation";
 import PrivateRoute from "./components/PrivateRoute";
 import Login from "./components/Login";
 import Homepage from "./components/Homepage";
+import Dashboard from "./components/dashboard/Dashboard";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route exact path="/" component={Homepage} />
           <Route exact path="/account" component={AccountCreation} />
           <Route exact path="/login" component={Login} />
+          <PrivateRoute path='/dashboard' component={Dashboard} />
         </header>
       </div>
     </Router>
